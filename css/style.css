@@ -1395,7 +1395,7 @@ header {
 }
 
 .header-container {
-  max-width: 1024px;
+  max-width: 1248px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1587,6 +1587,7 @@ header {
 .menu-container__text {
   font-size: 1.1em;
   line-height: 1.25em;
+  margin-bottom: 80px;
 }
 .menu .menukaarten {
   max-width: 1248px;
@@ -1595,7 +1596,50 @@ header {
 .menu .menukaarten-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+}
+.menu .menukaarten-container__kaart {
+  background-color: #efefef;
 }
 .menu .menukaarten-container__kaart img {
   max-width: 100%;
+}
+.menu .menukaarten-container__kaart__title {
+  padding: 13.3333333333px;
+}
+.menu .menukaarten-container__kaart__title h2 {
+  font-family: "Merriweather", serif;
+  color: #2c3033;
+  line-height: 1.25;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  font-size: 1.3em;
+}
+.menu .menukaarten-container__kaart__title h2:after {
+  width: 50px;
+  height: 6px;
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  z-index: -1;
+  left: 0;
+  background-color: #df7861;
+}
+.menu .menukaarten-container__kaart__text {
+  padding: 0 13.3333333333px;
+  font-size: 1.1em;
+  line-height: 1.25em;
+}
+.menu .menukaarten-container__kaart__text p:last-of-type {
+  background-color: #df7861;
+  color: #e1f4f3;
+  text-decoration: none;
+  padding: 13.3333333333px;
+  border-radius: 10px 0;
+  transition: background-color 0.2s ease-out;
+  margin-top: 20px;
+}
+.menu .menukaarten-container__kaart__text p:last-of-type:hover {
+  background-color: #ecb390;
 }
