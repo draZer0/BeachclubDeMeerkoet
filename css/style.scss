@@ -203,22 +203,79 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.8;
 
     &-container {
         max-width: 1248px;
         margin: 0 auto;
 
         h2 { 
+            text-align: center;
             font-family: 'Comfortaa', cursive; 
             font-size: 2.2em; 
-            color: $color_light;
+            color: $pcolor_dark;
             padding: $default-gap*4 0;
-            opacity: 0.3;
         }
 
     }
 }
 
+// MENU
+.menu {
+    margin: $default-gap*2 0;
 
+    &-container {
+        max-width: 768px;
+        margin: 0 auto;
 
+        &__title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: $default-gap/2;
+
+            h1 {
+                font-family: 'Merriweather', serif;
+                color: #2c3033;
+                line-height: 1.25;
+                font-weight: bold;
+                position: relative;
+                z-index: 1;
+                font-size: 2.3em;
+            }
+
+            h1:after {
+                width: 50px;
+                height: 9px;
+                position: absolute;
+                content: "";
+                bottom: 5px;
+                z-index: -1;
+                left: 0;
+                background-color: $pcolor_dark;
+            }
+        }
+
+        &__text {
+            font-size: 1.1em;
+            line-height: 1.25em;
+        }
+    }
+
+    .menukaarten {
+        max-width: 1248px;
+        margin: 0 auto;
+
+        &-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &__kaart {
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
 

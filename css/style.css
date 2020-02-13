@@ -1539,15 +1539,63 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.8;
 }
 .reserveer-container {
   max-width: 1248px;
   margin: 0 auto;
 }
 .reserveer-container h2 {
+  text-align: center;
   font-family: "Comfortaa", cursive;
   font-size: 2.2em;
-  color: #e1f4f3;
+  color: #df7861;
   padding: 160px 0;
-  opacity: 0.3;
+}
+
+.menu {
+  margin: 80px 0;
+}
+.menu-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.menu-container__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.menu-container__title h1 {
+  font-family: "Merriweather", serif;
+  color: #2c3033;
+  line-height: 1.25;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  font-size: 2.3em;
+}
+.menu-container__title h1:after {
+  width: 50px;
+  height: 9px;
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  z-index: -1;
+  left: 0;
+  background-color: #df7861;
+}
+.menu-container__text {
+  font-size: 1.1em;
+  line-height: 1.25em;
+}
+.menu .menukaarten {
+  max-width: 1248px;
+  margin: 0 auto;
+}
+.menu .menukaarten-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.menu .menukaarten-container__kaart img {
+  max-width: 100%;
 }
