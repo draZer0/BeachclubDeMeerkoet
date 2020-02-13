@@ -196,9 +196,9 @@ header {
     }
 }
 
-// RESERVEER
-.reserveer {
-    background-image: url("../img/reserv.jpeg");
+// GENIET
+.geniet {
+    background-image: url("../img/geniet.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -316,6 +316,7 @@ header {
                         border-radius: $default-gap/4 0;
                         transition: background-color .2s ease-out;
                         margin-top: $default-gap/2;
+                        margin-bottom: $default-gap/2;
             
                         &:hover {
                             background-color: $pcolor_medium;
@@ -327,3 +328,39 @@ header {
     }
 }
 
+// ONTSPAN
+.ontspan {
+    background-image: url("../img/ontspan.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+
+    &-container {
+        max-width: 1248px;
+        margin: 0 auto;
+
+        h2 { 
+            text-align: center;
+            font-family: 'Comfortaa', cursive; 
+            font-size: 2.2em; 
+            color: $pcolor_dark;
+            padding: $default-gap*4 0;
+        }
+
+    }
+}
+
+// CONTACT
+.contact {
+    background-color: $pcolor_dark;
+
+    &-container {
+
+        &__map {
+            height: 70vh;
+            width: 65%;
+        }
+    }
+}

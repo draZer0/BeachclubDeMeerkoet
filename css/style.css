@@ -1533,19 +1533,19 @@ header {
   color: #df7861;
 }
 
-.reserveer {
-  background-image: url("../img/reserv.jpeg");
+.geniet {
+  background-image: url("../img/geniet.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
 }
-.reserveer-container {
+.geniet-container {
   max-width: 1248px;
   margin: 0 auto;
 }
-.reserveer-container h2 {
+.geniet-container h2 {
   text-align: center;
   font-family: "Comfortaa", cursive;
   font-size: 2.2em;
@@ -1639,7 +1639,36 @@ header {
   border-radius: 10px 0;
   transition: background-color 0.2s ease-out;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .menu .menukaarten-container__kaart__text p:last-of-type:hover {
   background-color: #ecb390;
+}
+
+.ontspan {
+  background-image: url("../img/ontspan.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.ontspan-container {
+  max-width: 1248px;
+  margin: 0 auto;
+}
+.ontspan-container h2 {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-size: 2.2em;
+  color: #df7861;
+  padding: 160px 0;
+}
+
+.contact {
+  background-color: #df7861;
+}
+.contact-container__map {
+  height: 70vh;
+  width: 65%;
 }
