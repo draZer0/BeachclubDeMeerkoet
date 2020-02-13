@@ -51,6 +51,7 @@ header {
             color: $color_dark;
             text-decoration: none;
             margin-right: $default-gap/4;
+            transition: color .2s ease-out;
 
             &:hover {
                 color: $pcolor_dark;
@@ -63,6 +64,7 @@ header {
             text-decoration: none;
             padding: $default-gap/3;
             border-radius: $default-gap/4 0;
+            transition: background-color .2s ease-out;
 
             &:hover {
                 background-color: $pcolor_medium;
@@ -123,6 +125,11 @@ header {
                 background-color: $pcolor_dark;
                 padding: 9px 15px;
                 border-radius: 50%;
+                transition: background-color .2s ease-out;
+                
+                &:hover {
+                    background-color: $pcolor_medium;
+                }
             }
         }
     }
@@ -138,25 +145,28 @@ header {
 
         &__over {
             display: flex;
+            margin-bottom: $default-gap;
 
             &__item {
 
                 img {
                     margin-right: $default-gap;
-                    max-width: 500px;
+                    max-width: 550px;
                 }
 
-                h1 {
+                h1, h2 {
                     font-family: 'Merriweather', serif;
                     color: #2c3033;
                     line-height: 1.25;
                     font-weight: bold;
                     position: relative;
                     z-index: 1;
-                    font-size: 2em;
+                    font-size: 1.7em;
                 }
+
+                h1 { font-size: 2.3em; }
                 
-                h1:after {
+                h1:after, h2:after {
                     width: 50px;
                     height: 9px;
                     position: absolute;
@@ -171,6 +181,14 @@ header {
                     margin-top: $default-gap/3;
                     font-size: 1.1em;
                     line-height: 1.25em;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $pcolor_medium;
+                    transition: color .2s ease-out;
+
+                    &:hover { color: $pcolor_dark; }
                 }
             }
         }

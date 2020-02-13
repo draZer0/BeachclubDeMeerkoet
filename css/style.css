@@ -1408,6 +1408,7 @@ header {
   color: #333333;
   text-decoration: none;
   margin-right: 10px;
+  transition: color 0.2s ease-out;
 }
 .header-container__link__item:hover {
   color: #df7861;
@@ -1418,6 +1419,7 @@ header {
   text-decoration: none;
   padding: 13.3333333333px;
   border-radius: 10px 0;
+  transition: background-color 0.2s ease-out;
 }
 .header-container__link__item--button:hover {
   background-color: #ecb390;
@@ -1473,6 +1475,10 @@ header {
   background-color: #df7861;
   padding: 9px 15px;
   border-radius: 50%;
+  transition: background-color 0.2s ease-out;
+}
+.banner-container__scroll-button span:hover {
+  background-color: #ecb390;
 }
 
 .impressie {
@@ -1484,21 +1490,25 @@ header {
 }
 .impressie-container__over {
   display: flex;
+  margin-bottom: 40px;
 }
 .impressie-container__over__item img {
   margin-right: 40px;
-  max-width: 500px;
+  max-width: 550px;
 }
-.impressie-container__over__item h1 {
+.impressie-container__over__item h1, .impressie-container__over__item h2 {
   font-family: "Merriweather", serif;
   color: #2c3033;
   line-height: 1.25;
   font-weight: bold;
   position: relative;
   z-index: 1;
-  font-size: 2em;
+  font-size: 1.7em;
 }
-.impressie-container__over__item h1:after {
+.impressie-container__over__item h1 {
+  font-size: 2.3em;
+}
+.impressie-container__over__item h1:after, .impressie-container__over__item h2:after {
   width: 50px;
   height: 9px;
   position: absolute;
@@ -1512,4 +1522,12 @@ header {
   margin-top: 13.3333333333px;
   font-size: 1.1em;
   line-height: 1.25em;
+}
+.impressie-container__over__item a {
+  text-decoration: none;
+  color: #ecb390;
+  transition: color 0.2s ease-out;
+}
+.impressie-container__over__item a:hover {
+  color: #df7861;
 }
