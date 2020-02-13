@@ -1,12 +1,60 @@
 // Partials and import
 @use 'assets/reset';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 // Variables
 $default-font: 'Open Sans', sans-serif; 
 $default-gap: 40px;
 
 // Styling
+// BASE
 body {
     font-family: $default-font;
+    
+    //debug
+    background-color: red;
 }
+
+// HEADER
+header {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px #000000;
+    padding: $default-gap/4;
+    font-family: 'Merriweather', serif;
+}
+
+.header-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        img { max-width: 220px; }
+    }
+}
+
+
+
+
+
+// h1 {
+//     font-size: 40px;
+//     color: #2c3033;
+//     line-height: 1.25;
+//     font-weight: 700;
+//     position: relative;
+//     z-index: 1;
+// }
+// h1:after {
+//     width: 90px;
+//     height: 10px;
+//     position: absolute;
+//     content: "";
+//     bottom: 9px;
+//     z-index: -1;
+//     left: 0;
+//     background-color: #ff6426;
+// }
