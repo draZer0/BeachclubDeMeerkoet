@@ -1427,6 +1427,7 @@ header {
 
 .banner {
   background-image: url("../img/bg.jpeg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1482,7 +1483,7 @@ header {
 }
 
 .impressie {
-  margin-top: 80px;
+  margin: 120px 0;
 }
 .impressie-container {
   max-width: 1248px;
@@ -1530,4 +1531,23 @@ header {
 }
 .impressie-container__over__item a:hover {
   color: #df7861;
+}
+
+.reserveer {
+  background-image: url("../img/reserv.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reserveer-container {
+  max-width: 1248px;
+  margin: 0 auto;
+}
+.reserveer-container h2 {
+  font-family: "Comfortaa", cursive;
+  font-size: 2.2em;
+  color: #e1f4f3;
+  padding: 160px 0;
+  opacity: 0.3;
 }

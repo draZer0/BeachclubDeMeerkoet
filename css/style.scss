@@ -76,6 +76,7 @@ header {
 // BANNER
 .banner {
     background-image: url("../img/bg.jpeg");
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,7 +138,7 @@ header {
 
 // IMPRESSIE 
 .impressie {
-    margin-top: $default-gap*2;
+    margin: $default-gap*3 0;
 
     &-container {
         max-width: 1248px;
@@ -195,6 +196,28 @@ header {
     }
 }
 
+// RESERVEER
+.reserveer {
+    background-image: url("../img/reserv.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-container {
+        max-width: 1248px;
+        margin: 0 auto;
+
+        h2 { 
+            font-family: 'Comfortaa', cursive; 
+            font-size: 2.2em; 
+            color: $color_light;
+            padding: $default-gap*4 0;
+            opacity: 0.3;
+        }
+
+    }
+}
 
 
 
