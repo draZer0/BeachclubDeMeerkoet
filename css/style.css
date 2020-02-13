@@ -56,6 +56,10 @@ table {
   border-spacing: 0;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.2
@@ -1382,27 +1386,6 @@ table {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
-}
-
-h1 {
-  font-family: "Merriweather", serif;
-  color: #2c3033;
-  line-height: 1.25;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-}
-
-h1:after {
-  width: 90px;
-  height: 10px;
-  position: absolute;
-  content: "";
-  bottom: 9px;
-  z-index: -1;
-  left: 0;
-  background-color: #df7861;
 }
 
 header {
@@ -1463,7 +1446,23 @@ header {
   font-size: 2.2em;
 }
 .banner-container__text h1 {
+  font-family: "Merriweather", serif;
+  color: #2c3033;
+  line-height: 1.25;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
   font-size: 3.5em;
+}
+.banner-container__text h1:after {
+  width: 90px;
+  height: 10px;
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  z-index: -1;
+  left: 0;
+  background-color: #df7861;
 }
 .banner-container__scroll-button {
   position: absolute;
@@ -1489,4 +1488,28 @@ header {
 .impressie-container__over__item img {
   margin-right: 40px;
   max-width: 500px;
+}
+.impressie-container__over__item h1 {
+  font-family: "Merriweather", serif;
+  color: #2c3033;
+  line-height: 1.25;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  font-size: 2em;
+}
+.impressie-container__over__item h1:after {
+  width: 50px;
+  height: 9px;
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  z-index: -1;
+  left: 0;
+  background-color: #df7861;
+}
+.impressie-container__over__item p {
+  margin-top: 13.3333333333px;
+  font-size: 1.1em;
+  line-height: 1.25em;
 }
