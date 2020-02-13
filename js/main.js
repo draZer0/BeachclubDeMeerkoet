@@ -2,7 +2,7 @@ window.onload = () => {
 
     new WOW().init();
 
-    const map = L.map('mapid').setView([52.24, 4.426], 13);
+    const map = L.map('mapid', {gestureHandling: true}).setView([52.24, 4.426], 13);
 
     const icon = L.icon({
         iconUrl: '../img/icon.png',
