@@ -1674,5 +1674,12 @@ header {
 }
 
 footer {
-  background-color: #333333;
+  background-color: #2c3033;
+  padding: 40px 0;
+}
+footer .footer {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #efefef;
 }

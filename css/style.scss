@@ -367,5 +367,13 @@ header {
 
 // FOOTER
 footer {
-    background-color: $color_dark;
+    background-color: $color_text;
+    padding: $default-gap 0;
+
+    .footer {
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: $default-gap/2 0;
+        color: $color_extralight;
+    }
 }
